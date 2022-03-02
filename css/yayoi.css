@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import "/~yayoi/css/bootstrap-4.4.1.css";
+
+body {background: #F5F5F5}
+
+.bg-yayoi {background: #E2DBE5}
+
+.modal-content, .dropdown-menu {background: #F5F5F5; border-color: rgba(0, 0, 0, 0.5); color: rgba(0, 0, 0, 0.5)}
+
+.navbar-yayoi a.navbar-brand:link, .navbar-yayoi .navbar-nav a.nav-link:link, .dropdown-menu a.dropdown-item:link, .navbar-yayoi a.navbar-brand:active, .navbar-yayoi .navbar-nav a.nav-link:active, .dropdown-menu a.dropdown-item:active, .navbar-yayoi a.navbar-brand:visited, .navbar-yayoi .navbar-nav a.nav-link:visited, .dropdown-menu a.dropdown-item:visited {color: rgba(0,0,0,0.5)}
+
+.navbar-yayoi a.navbar-brand:hover, .navbar-yayoi .navbar-nav a.nav-link:hover {color: #000000}
+
+.navbar-yayoi .navbar-nav a.disabled:link {color: rgba(0,0,0,0.3)}
+
+.navbar-yayoi .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.dropdown-menu a.dropdown-item:hover {background: #D9BEE3}
+.dropdown-menu a.dropdown-item:active {background: #7D22C4; color: #F5F5F5}
+
+.newsbox {background: rgba(204,204,204,0.75); border-radius: 15px}
+
+@media (prefers-color-scheme: dark) {
+  body {background: #484848; color:#F5F5F5}
+  
+  .bg-yayoi {background: #1F1F1F; color: #F5F5F5}
+  
+  .navbar-yayoi a.navbar-brand:link, .navbar-yayoi .navbar-nav a.nav-link:link, .dropdown-menu a.dropdown-item:link, .navbar-yayoi a.navbar-brand:active, .navbar-yayoi .navbar-nav a.nav-link:active, .dropdown-menu a.dropdown-item:active, .navbar-yayoi a.navbar-brand:visited, .navbar-yayoi .navbar-nav a.nav-link:visited, .dropdown-menu a.dropdown-item:visited {color: rgba(255,255,255,0.5)}
+  
+  .navbar-yayoi a.navbar-brand:hover, .navbar-yayoi .navbar-nav a.nav-link:hover {color: #FFFFFF}
+  
+  .navbar-yayoi .navbar-nav a.disabled:link {color: rgba(255,255,255,0.3)}
+  
+  .navbar-yayoi .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+  
+  .modal-content, .dropdown-menu {background: #484848; color: #F5F5F5}
+  
+  .dropdown-menu a.dropdown-item:hover {background: #7D22C4}
+  .dropdown-menu a.dropdown-item:active {background: #D9BEE3; color: #484848}
+  
+  .newsbox {background: rgba(31,31,31,0.75); border-radius: 15px}
+  
+  .close {color: #FFFFFF}
+}

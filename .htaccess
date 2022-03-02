@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^guides/.*$ guides.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ guides.php [QSA,L]
