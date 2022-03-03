@@ -1,9 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import "/~yayoi/css/bootstrap-4.4.1.css";
+@import "./bootstrap-4.4.1.css";
 
 body {background: #F5F5F5}
+
+.page {max-width: 100% !important}
 
 .bg-yayoi {background: #E2DBE5}
 
