@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-03-03 Thu 10:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yaya's World - Guides - Leveling Your Newblets</title>
+<meta name="author" content="Jon Saxton" />
+<meta name="description" content="My Fiesta and MMO Site
+Header
+Footer" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="//localhost/~yayoi/yayoi/css/yayoi.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="content" class="page">
+
+<nav class="navbar navbar-expand-lg navbar-yayoi bg-yayoi">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/adventures/">Adventures</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/guides/">Guides</a> </li>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="//forums.onigirionegai.info/viewforum.php?f=3">Forum</a> </li>
+      </ul><form action="//forums.onigirionegai.info/search.php" method="get" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" name="keywords" placeholder="Search the forums" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <header>
+    <div class="jumbotron" style="background-image: url('https://assets.frontend.gamigo.com/cms/24/news/sale_findthemall_web.png'); background-repeat: no-repeat; background-position: center; background-size: cover">
+      <div class="container newsbox">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Treasure Hunt: Find them all!</h1>
+          <p class="text-center">Awesome items are hiding in the item shop! Find them all!</p>
+          <p class="text-center"><a class="btn btn-primary btn-lg" href="https://fiesta.gamigo.com/us/news/sale_find_them_all-870" target="new" role="button">Learn more</a></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mb-4 mt-2 text-justify">
+
+<body id="outline-container-leveling-your-newblets-level-41-80" class="outline-2">
+<h2 id="leveling-your-newblets-level-41-80">Leveling Your Newblets (level 41-80)</h2>
+<div class="outline-text-2" id="text-leveling-your-newblets-level-41-80">
+<p>
+If you are lucky enough to be in Flaming Mine since you were a baby, you
+can pretty much stay there until level 50. Otherwise you should do a few
+repeatables and the Iyzel quests (at level 40) in order to get here. You
+can see the guide for babies for more information.
+</p>
+
+<p>
+From this point on you will be exploiting the games various repeatable
+quests in order to level quickly and efficiently. In some cases you can
+gain up to four levels in a less than an hour, if you can catch the
+right quests. For now though, it is best to exploit Tower of Iyzel to
+get you to 41 or 42 than you should run around completing various 40-42
+level quests until you reach level 43.
+</p>
+</div>
+
+<div id="outline-container-how-best-to-exploit-repeatables-from-level-43-80-in-yayois-opinion" class="outline-3">
+<h3 id="how-best-to-exploit-repeatables-from-level-43-80-in-yayois-opinion">How best to exploit repeatables from level 43-80, in Yayoi&rsquo;s opinion</h3>
+<div class="outline-text-3" id="text-how-best-to-exploit-repeatables-from-level-43-80-in-yayois-opinion">
+<p>
+There are many leveling guides available. Each guide seems to have its
+own way of doing things and there are a lot of arguments over what is
+the best way to level a character. This is simply how I like to do
+things. If you are in a guild academy and managed a discord invite, see
+if your guild has a guide and feel free to experiment.
+</p>
+</div>
+
+<div id="outline-container-level-43-44" class="outline-4">
+<h4 id="level-43-44">Level 43-44</h4>
+<div class="outline-text-4" id="text-level-43-44">
+<ol class="org-ol">
+<li>Complete the quest &ldquo;A bet with Marty 1&rdquo; This will require you to 8
+Gobling Swordman and pick up 3 Goblin Swords that they drop.</li>
+<li>Once you turn in &ldquo;A bet with Marty 1&rdquo; you will unlock the quest &ldquo;A
+Bet with Marty 2&rdquo;. This requires you to pick up 5 Goblin Swords from
+Goblin Swordsman and kill 10 of those mobs. This is a repeatable to
+quests. After a few turn ins you should be level 44 easy. Gobling
+Swordman are fairly easy mobs and can be solo&rsquo;d by characters at this
+level. For clerics, however, I <b>highly</b> recommend you gather them
+while a friend kills em. Don&rsquo;t forget to heal your friend if they
+need it.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-level-45-49" class="outline-4">
+<h4 id="level-45-49">Level 45-49</h4>
+<div class="outline-text-4" id="text-level-45-49">
+<p>
+The repeatable above will still be available, but you will also gain
+access to two more repeatable quests at level 44, &ldquo;Fantastic Items&rdquo; and
+&ldquo;Best Broomsticks 3&rdquo;. These both require items from the same mob so they
+can be used at the same time. &ldquo;Fantastic Items&rdquo; requires you to get 15
+Warebear&rsquo;s Claws from Ware Bears while &ldquo;Best Broomsticks 3&rdquo;, available
+after completing the first two &ldquo;Best Broomstick&rdquo; quests requires 15
+Warebear Armbit Hairs. Ware Bears are a bit tougher, but can probably
+still be solo&rsquo;d by all classes accept clerics.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-49-52" class="outline-4">
+<h4 id="level-49-52">Level 49-52</h4>
+<div class="outline-text-4" id="text-level-49-52">
+<p>
+At level 49, you can head to Scaffold Execution Ground through the
+Collapsed Prision portal. Right at this portal is a mob called Mini
+Lips. These will drop &ldquo;Mini Lips&rsquo; Lips&rdquo; if you have the quest &ldquo;Mannequin
+Lips&rdquo;. Pick up 10 of these and turn in. Repeat until you reach level 52.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-52-55" class="outline-4">
+<h4 id="level-52-55">Level 52-55</h4>
+<div class="outline-text-4" id="text-level-52-55">
+<p>
+Scaffold Execition Grounds also has a rather large pack of King Colls.
+These will drop &ldquo;King Donkey Teeth&rdquo; when you have the quest &ldquo;The
+Unbreakable Chisel&rdquo;. You can pick up this quest from the quest list at
+level 52. This is a fairly easy and quick (especially with a killer) way
+to get to level 55.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-55-60" class="outline-4">
+<h4 id="level-55-60">Level 55-60</h4>
+<div class="outline-text-4" id="text-level-55-60">
+<p>
+Both Collapsed Prision and Scaffold Execution Grounds have prisioners,
+there are more of them in large groups in Collapsed prision. As part of
+the Level 55 quest &ldquo;Escape from Concealed Prision 1&rdquo; you need to kill
+ten of them. Once you turn this quest in, you can pick up &ldquo;Escape from
+Concealed Prison 2&rdquo;. You now need to kill 20 prisioners for a turn in,
+but this is a repeatable and a fairly easy way to reach level 60.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-60" class="outline-4">
+<h4 id="level-60">Level 60</h4>
+<div class="outline-text-4" id="text-level-60">
+<p>
+Unfortunately, many of the above quests have expired or simply don&rsquo;t
+provide enough experience to help you get to level 61, so now you can do
+all the other quests you&rsquo;ve neglected up until now. Have fun 😝!
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-61-64" class="outline-4">
+<h4 id="level-61-64">Level 61-64</h4>
+<div class="outline-text-4" id="text-level-61-64">
+<p>
+The zombie crystal rep in Crystal Cave is the quickest way to clear
+these three levels. It does have a few prequests though, and will
+require a party. I should have a CC runner to help you though.
+</p>
+
+<ol class="org-ol">
+<li>Second Tower 1</li>
+<li>Second Tower 2</li>
+<li>What I do?</li>
+<li>Reward for Dark Crystal 3 (this is the repeatable)</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-level-64" class="outline-4">
+<h4 id="level-64">Level 64</h4>
+<div class="outline-text-4" id="text-level-64">
+<p>
+You know all those quests you didn&rsquo;t do because you will killing zombies
+(or, more likely, having zombies killed) in CC. Yeah, do those until you
+get to 65. Really only need to do the 61-64 quests, save your old 5x
+quests for later 😉.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-65-67" class="outline-4">
+<h4 id="level-65-67">Level 65-67</h4>
+<div class="outline-text-4" id="text-level-65-67">
+<p>
+Greenkies repeat is the easiest way to clear this two levels. Do get you
+need to clear &ldquo;Dreadful Forest Elf 1&rdquo;. The repeatable is &ldquo;Dreadful
+Forest Elf 2&rdquo;
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-68" class="outline-4">
+<h4 id="level-68">Level 68</h4>
+<div class="outline-text-4" id="text-level-68">
+<p>
+Do those old level 5x quests I mentioned before. Save the remaining
+level 6x quests though.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-69" class="outline-4">
+<h4 id="level-69">Level 69</h4>
+<div class="outline-text-4" id="text-level-69">
+<p>
+Do the level 6x quests now. Alternatively there is also the mud rep. It
+is much easier to do this rep now than it was when I first came back and
+many guides still omit it. Truthfully, I would only use it if I need a
+few more exp to get to 70, but its always there if you need it. It is
+called &ldquo;Hair Remover&rdquo; and is available at level 68, no prequests needed.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-70" class="outline-4">
+<h4 id="level-70">Level 70</h4>
+<div class="outline-text-4" id="text-level-70">
+<p>
+Your best bet, KKP KQ. Bonus, this is a fairly popular and easy KQ. Just
+a few of these and you should be Level 71 easy. Also, be on the look out
+for vendors in Uruga buying some of the rewards, they pay more than the
+NPCs 😉.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-71-74" class="outline-4">
+<h4 id="level-71-74">Level 71-74</h4>
+<div class="outline-text-4" id="text-level-71-74">
+<p>
+Navar rep. Seriously fast with a good party or a good killer. You will
+need to complete &ldquo;Navar Mercenaries 1&rdquo;, which requires you to gather 10
+Navar Merc Liscences that the Nevars will occasionally drop and turn
+this back into Warrior Master Marty in Elderine (did I forget to mention
+that regular quests can no longer be turned in at the quest list as of
+level 60, personally, I hate that). Once you&rsquo;ve done that you can pick
+up &ldquo;Navar Mercenaries 2&rdquo; from Marty and only count the kills.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-74-76" class="outline-4">
+<h4 id="level-74-76">Level 74-76</h4>
+<div class="outline-text-4" id="text-level-74-76">
+<p>
+Do any Level 6x quests you may still have as well as your level 7x
+quests up until this point. If this isn&rsquo;t quite enough to push you into
+level 77, than KKP is still available to help.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-77-79" class="outline-4">
+<h4 id="level-77-79">Level 77-79</h4>
+<div class="outline-text-4" id="text-level-77-79">
+<p>
+Okay, well, hopefully, you&rsquo;ve managed to pick up some friends by now, or
+you&rsquo;re part of a guild academy, or your really outgoing, or I&rsquo;m free.
+You <i>can</i> continue to do KKP all the way to 80, if, you want, but its
+going to be getting slow by now. My suggestion is the Lizard Knight rep.
+Its best to have a party with this one though. Your party should have a
+killer (a mage or archer that can kill groups of Lizardman Knights at
+once), a mob herder (someone to run around on a +1 or better mount and
+gather the Lizardman Knights) and at 0-3 additional party members (these
+will help additional items spawn and we call them droppers) all with the
+quest. In the right conditions you can get to 79 vary quickly. The
+repeatable is &ldquo;Monster Collector 2&rdquo;, and its available once you have
+turned in &ldquo;Master Collector 1&rdquo;
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-79" class="outline-4">
+<h4 id="level-79">Level 79</h4>
+<div class="outline-text-4" id="text-level-79">
+<p>
+Nix rep. This one is fairly quick. The quest is called &ldquo;Slay the Fire
+Nix&rdquo;. Fire Nixes can be killed by a character at this level with some
+ease, but, as always, gathering them and having someone kill them with
+an AOE is much faster.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-more-information" class="outline-3">
+<h3 id="more-information">More Information</h3>
+<div class="outline-text-3" id="text-more-information">
+<p>
+As always, you can visit the <a href="http://fiesta-wiki.com/quests/4">Fiesta
+Wiki</a> for details on every quest. Congrats, you aren&rsquo;t a newblet any
+more 🥳!
+</p>
+
+  </div>
+</div>
+<!-- InstanceEndEditable --></section>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © Yayoi. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</div>
+</body>
+</div>
+</body>
+</html>

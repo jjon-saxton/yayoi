@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-03-03 Thu 15:05 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yaya's World - Guides - Leveling Your Fledgling Adventurer</title>
+<meta name="author" content="Jon Saxton" />
+<meta name="description" content="My Fiesta and MMO Site
+Header
+Footer" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="//localhost/~yayoi/yayoi/css/yayoi.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="content" class="page">
+
+<nav class="navbar navbar-expand-lg navbar-yayoi bg-yayoi">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/adventures/">Adventures</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/guides/">Guides</a> </li>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="//forums.onigirionegai.info/viewforum.php?f=3">Forum</a> </li>
+      </ul><form action="//forums.onigirionegai.info/search.php" method="get" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" name="keywords" placeholder="Search the forums" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <header>
+    <div class="jumbotron" style="background-image: url('https://assets.frontend.gamigo.com/cms/24/news/sale_findthemall_web.png'); background-repeat: no-repeat; background-position: center; background-size: cover">
+      <div class="container newsbox">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Treasure Hunt: Find them all!</h1>
+          <p class="text-center">Awesome items are hiding in the item shop! Find them all!</p>
+          <p class="text-center"><a class="btn btn-primary btn-lg" href="https://fiesta.gamigo.com/us/news/sale_find_them_all-870" target="new" role="button">Learn more</a></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mb-4 mt-2 text-justify">
+
+<body id="outline-container-leveling-your-fledgling-adventurer-level-81-120" class="outline-2">
+<h2 id="leveling-your-fledgling-adventurer-level-81-120">Leveling Your Fledgling Adventurer (level 81-120)</h2>
+<div class="outline-text-2" id="text-leveling-your-fledgling-adventurer-level-81-120">
+<p>
+If you have followed my <a href="newblets.html">guides</a> so
+far then you&rsquo;ll be level 81 in no time, especially if you were power
+leveled. Things will start to go really fast or depressingly slow
+depending on the guild you are in, the money you have amassed, or the
+friends you have. This is kinda just how it is in Fiesta, unfortunately.
+</p>
+</div>
+
+<div id="outline-container-how-best-to-exploit-repeatable-from-level-81-120-according-to-yayoi" class="outline-3">
+<h3 id="how-best-to-exploit-repeatable-from-level-81-120-according-to-yayoi">How best to exploit repeatable from level 81-120, according to Yayoi</h3>
+<div class="outline-text-3" id="text-how-best-to-exploit-repeatable-from-level-81-120-according-to-yayoi">
+<p>
+Again, there are many leveling guides available, and a lot of opinions
+on how things can be done at this stage too. For this stage I&rsquo;m going to
+give you a few options for some of the levels. If you have the friends
+and money they&rsquo;ll help you level really quickly, if you don&rsquo;t than you
+can still solo, or work with a group of close friends your level, and
+stll level, but it&rsquo;ll be slower.
+</p>
+</div>
+
+<div id="outline-container-level-80-90" class="outline-4">
+<h4 id="level-80-90">Level 80-90</h4>
+<div class="outline-text-4" id="text-level-80-90">
+<ol class="org-ol">
+<li>There is a repeatable for gathering armor pieces in DT. You can have
+a higher level friend or a DT runner and a few droppers run through
+DT with you. Make sure you inventory is nearly empty and just fill it
+with these armor pieces. Once full, leave the dungeon and spam turn
+ins. Rince and repeat until your level 90. Don&rsquo;t forget to get the DT
+Key and quests.</li>
+<li>Alternatively, you can just do all the level 7x quests. There are a
+few somewhat boring reps mixed in there to help you get to 90.</li>
+</ol>
+</div>
+
+<div id="outline-container-the-slow-way" class="outline-5">
+<h5 id="the-slow-way">The slow way</h5>
+<div class="outline-text-5" id="text-the-slow-way">
+<p>
+Here are the reps you can do to help you get to 90 if you can&rsquo;t do DT
+for some reason:
+</p>
+
+<ol class="org-ol">
+<li>Level 84-88 - Kidmon Rep - &ldquo;Hans in Love&rdquo;</li>
+<li>Level 85-88 - Toy Spade Rep - &ldquo;Kidmon The Menance&rdquo;</li>
+<li>Level 86-89 - Jewel Tree Rep - &ldquo;Tree of Jewels&rdquo;</li>
+<li>Level 88-90 - Red Nix Rep - &ldquo;A Tree With Holes&rdquo;</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-level-90-105" class="outline-4">
+<h4 id="level-90-105">Level 90-105</h4>
+<div class="outline-text-4" id="text-level-90-105">
+<ol class="org-ol">
+<li>You can now enter Leviathan Nest. You need to complete the quest
+&ldquo;Lost Key to the Lighthouse&rdquo; to get the key. This requires you to
+slay Nest Slime, which is kinda strong for its level, best to have a
+friend help. Once here you have the key, you can find a guildie,
+friend, or other LN runner and just stand around and gather exp. This
+is nice because you can level while you AFK like in FM, but it can be
+expansive because runners don&rsquo;t run it for free, usually.</li>
+<li>Alternatively, there is a non-LN strategy that is not as easy and is
+a bit slower, but more than doable.</li>
+</ol>
+</div>
+
+<div id="outline-container-the-slow-way-1" class="outline-5">
+<h5 id="the-slow-way-1">The slow way</h5>
+<div class="outline-text-5" id="text-the-slow-way-1">
+<ol class="org-ol">
+<li>Level 90-94 - RS Rep - Complete the following: &ldquo;Burning
+Cave&rdquo;&gt;&ldquo;Burning Cave 2&rdquo; to unlock &ldquo;My hunches never proves wrong&rdquo; -
+Rock Stone is also hard to kill for someone at this level, but I love
+killing RS so just get in-touch with me, or you can have another high
+level guildie or friend kill it for you while you turn in the rep.</li>
+<li>Level 94-95 - Do all the non-repeatable quests you have other than
+the 94s</li>
+<li>Level 96-97 - King Rhino Rep - &ldquo;The Threats of King Rhinoce&rdquo; - Pretty
+easy mini-boss, may even be able to solo him, but a higher level
+killer is faster.</li>
+<li>Level 98 - do all the 9x quests to get you to 99</li>
+<li>Level 99-101 - Slugs rep - &ldquo;Personal Revenge&rdquo;</li>
+<li>Level 101-104 - Mad slugs rep - &ldquo;Suspicious Big Mudmen&rdquo;&gt;&ldquo;Fire on
+Hands and Feet&rdquo;&gt;&ldquo;Unextinguishable Fire&rdquo;</li>
+<li>Level 102-106 - BB rep - &ldquo;Black Bear Beatdown&rdquo;</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-level-105" class="outline-4">
+<h4 id="level-105">Level 105</h4>
+<div class="outline-text-4" id="text-level-105">
+<p>
+If you did LN above, then just do the BB rep mentioned in the slow way
+to get you to 106.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-106-108" class="outline-4">
+<h4 id="level-106-108">Level 106-108</h4>
+<div class="outline-text-4" id="text-level-106-108">
+<p>
+Okie, most of the shortcuts are done now so, no matter what, you&rsquo;re
+going to have to grind a bit. Fortunately it isn&rsquo;t really hard. Just
+remember that a lot of people are going to be doing these quests, see if
+you can join a party with a dedicated killer and this will go much
+faster. For these levels, you have the Fire Shellas rep (&ldquo;Playing with
+Fire&rdquo;).
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-109" class="outline-4">
+<h4 id="level-109">Level 109</h4>
+<div class="outline-text-4" id="text-level-109">
+<p>
+Complete all quests you&rsquo;ve saved until this point. If you haven&rsquo;t had to
+do the 9x quests than this will be very quick. Otherwise, the quests in
+OLT are here and they are also fairly quick with any other quests you
+saved up. OLT is best tackled with a party though.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-110-111" class="outline-4">
+<h4 id="level-110-111">Level 110-111</h4>
+<div class="outline-text-4" id="text-level-110-111">
+<p>
+Nepu Nepu Neeeeep! Its time for the Nep rep. Complete &ldquo;Collecting
+Twister Crystals&rdquo; before getting the repeatable version. Believe it or
+not, there is nothing to collect for this rep, just killing.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-112-116" class="outline-4">
+<h4 id="level-112-116">Level 112-116</h4>
+<div class="outline-text-4" id="text-level-112-116">
+<p>
+Either Mean Leipoons (&ldquo;Threats for Temporary Settlement 1&rdquo;) or Shellas
+rep (&ldquo;Threats for Temporary Settlement 2&rdquo;). It is important to note that
+you will have to completely The Mean Leipoons rep a few times before the
+Shellas rep shows up. Its weird, but true.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-116-118" class="outline-4">
+<h4 id="level-116-118">Level 116-118</h4>
+<div class="outline-text-4" id="text-level-116-118">
+<p>
+Wrenches rep. Unfortunately, this quest is buried under a loooong list
+of prequests, but here they are: &ldquo;Milly&rsquo;s Healthy Wonder Medicine
+2&rdquo;&gt;&ldquo;Unknown Causes.. However&rdquo;&gt;&ldquo;Noisy Animals 1&rdquo;&gt;&ldquo;Noisy Animals
+2&rdquo;&gt;&ldquo;Special Wrenches&rdquo;. Once these are complete you&rsquo;ll get the repeatable
+version of &ldquo;Special Wrenches&rdquo;. It should also be noted that you can make
+a ton of money by doing &ldquo;The Workshop Master is making a weapon&rdquo;
+(available at 117) while you are doing the wrenches rep, not to mention
+this boosts your exp too.
+</p>
+</div>
+</div>
+
+<div id="outline-container-level-118-121" class="outline-4">
+<h4 id="level-118-121">Level 118-121</h4>
+<div class="outline-text-4" id="text-level-118-121">
+<p>
+Junks rep. This is also buried under a loooong list of prequests, so
+I&rsquo;ll give you those too. &ldquo;Smart Yeti is preparing for an
+Exam&rdquo;&gt;&ldquo;Something urgent came up to Hilda&rdquo;&gt;&ldquo;Sick Akisha&rdquo;&gt;&ldquo;North Witch&rsquo;s
+dark power&rdquo;&gt;&ldquo;Pagel&rsquo;s voice 1&rdquo;&gt;&ldquo;Pagel&rsquo;s voice 2&rdquo;&gt;&ldquo;Someone can help us..
+Right?&rdquo;&gt;&ldquo;Yeti inivading Arkroute&rdquo;&gt;&ldquo;A strong Alliance&rdquo;&gt;&ldquo;To prosper Bera
+Village&rdquo;&gt;&ldquo;The Adventurers are not arriving&rdquo;&gt;&ldquo;The scariest monster&rdquo;&gt;&ldquo;A
+story of Valiere and Hilda 1&rdquo;&gt;&ldquo;A story of Vailere and Hilda 2&rdquo;&gt;&ldquo;A story
+of Valiere and Hilda 3&rdquo;. After <i>aaall</i> these quests, you&rsquo;ll finally get
+<i>&ldquo;Selling Junks&rdquo;</i>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-congrats" class="outline-3">
+<h3 id="congrats">Congrats</h3>
+<div class="outline-text-3" id="text-congrats">
+<p>
+You are now a bone-fide adventurer. You are only 15 levels away from
+cap, so keep it up! As always, you can visit the
+<a href="http://fiesta-wiki.com/quests/8">Fiesta Wiki</a> for more information on
+any of the quests above.
+</p>
+
+  </div>
+</div>
+<!-- InstanceEndEditable --></section>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © Yayoi. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</div>
+</body>
+</div>
+</body>
+</html>

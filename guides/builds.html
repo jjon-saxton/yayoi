@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-03-03 Thu 10:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Yaya's World - Guides - Builds Guide</title>
+<meta name="author" content="Jon Saxton" />
+<meta name="description" content="My Fiesta and MMO Site
+Header
+Footer" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="//localhost/~yayoi/yayoi/css/yayoi.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="content" class="page">
+
+<nav class="navbar navbar-expand-lg navbar-yayoi bg-yayoi">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/adventures/">Adventures</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="http://onigirionegai.info/~yayoi/guides/">Guides</a> </li>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="//forums.onigirionegai.info/viewforum.php?f=3">Forum</a> </li>
+      </ul><form action="//forums.onigirionegai.info/search.php" method="get" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" name="keywords" placeholder="Search the forums" aria-label="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <header>
+    <div class="jumbotron" style="background-image: url('https://assets.frontend.gamigo.com/cms/24/news/sale_findthemall_web.png'); background-repeat: no-repeat; background-position: center; background-size: cover">
+      <div class="container newsbox">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Treasure Hunt: Find them all!</h1>
+          <p class="text-center">Awesome items are hiding in the item shop! Find them all!</p>
+          <p class="text-center"><a class="btn btn-primary btn-lg" href="https://fiesta.gamigo.com/us/news/sale_find_them_all-870" target="new" role="button">Learn more</a></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mb-4 mt-2 text-justify">
+
+<body id="outline-container-build-guide" class="outline-2">
+<h2 id="build-guide">Builds Guide</h2>
+<div class="outline-text-2" id="text-build-guide">
+<p>
+For some context, it&rsquo;s important to know that Fiest Online has six
+classes. Each class is best suited to a particular role such as Damange
+Dealer (DD), Damage over Time (DoT), Area of Effect (AoE), Tank, or
+Support. I won&rsquo;t go into details as to which class works best in which
+role as that is laid out very well on
+<a href="https://fiesta.gamigo.com/us/classes">Fiesta&rsquo;s Main Site</a>. However
+builds can be tricky since each class has its own strength and
+weaknesses while its leveling such that what works for Archers my not
+work for Mages (even though they both specialize in AoE). So, here are
+the generally accepted builds and what classes to use with them 😉.
+</p>
+</div>
+
+<div id="outline-container-all-str" class="outline-3">
+<h3 id="all-str">All STR</h3>
+<div class="outline-text-3" id="text-all-str">
+<p>
+This is easy as from the start, you just dump all of your skill points
+into STR. At first this seems like a really good build for all
+characters, but a character without DEF dies 😵. One might be tempted to
+use this for a tank role, but tanks are supposed to take dmg not give
+it. Really the only classes where this build works is Crusader, as they
+have good DEF by default and also have support skills, and Fighter
+(Gladiator Specifically) that focus more on DD roles than tanking.
+</p>
+
+<p>
+<i>Classes</i>:
+<a href="https://fiesta.gamigo.com/us/crusader">🗡</a><a href="https://fiesta.gamigo.com/us/fighter">🛡</a><a href="https://fiesta.gamigo.com/us/joker">👻</a><a href="https://fiesta.gamigo.com/us/archer">🏹</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-full-end" class="outline-3">
+<h3 id="full-end">Full END</h3>
+<div class="outline-text-3" id="text-full-end">
+<p>
+Like All STR, full END just has you dump all of your points in one stat,
+in this case END. This will maximize your health and defenses. This is
+well suited for support classes, especially clerics, and tanks. People
+tend do die if the clericor tank dies so the more defense and HP they
+have the better.
+</p>
+
+<p>
+<i>Classes</i>:
+<a href="https://fiesta.gamigo.com/us/fighter">🛡</a><a href="https://fiesta.gamigo.com/us/crusader">🗡</a><a href="https://fiesta.gamigo.com/us/cleric">✝️</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-totally-dex" class="outline-3">
+<h3 id="totally-dex">Totally DEX</h3>
+<div class="outline-text-3" id="text-totally-dex">
+<p>
+Dumping all your points into DEX may seem odd, but some classes can
+really utilize this well. Besides who needs DEF if the mobs can&rsquo;t even
+hit you 🤪. Keep in mind though, you are sacrificing your potential in
+other areas. This really only makes since when you can kill fairly
+quickly too, so only DDs really, and you will still need some DEF. Just
+be careful with this one.
+</p>
+
+<p>
+<i>Classes</i>:
+<a href="https://fiesta.gamigo.com/us/joker">👻</a><a href="https://fiesta.gamigo.com/us/archer">🏹</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-pure-spr" class="outline-3">
+<h3 id="pure-spr">Pure SPR</h3>
+<div class="outline-text-3" id="text-pure-spr">
+<p>
+I&rsquo;m listing this just because its a possibility to maximize your
+character&rsquo;s SP, M.DEF, and crit rate, but you will need very good gear
+or you still won&rsquo;t do much dmg and will probably die a lot too 😅.
+</p>
+
+<p>
+<i>Classes</i>:
+<a href="https://fiesta.gamigo.com/us/mage">🧙</a><a href="https://fiesta.gamigo.com/us/archer">🏹</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-dexrest-str" class="outline-3">
+<h3 id="dexrest-str">33 DEX/Rest STR</h3>
+<div class="outline-text-3" id="text-dexrest-str">
+<p>
+The above DD build (All STR) is great, but it ignores aim. Sprinkling in
+a few points to SPR, until you have 33 (or maximum of 67) fixes this
+helping your DD hit more often. This build is well suited for all those
+recommended for the All STR builds.
+</p>
+
+<p>
+<i>Classes</i>:
+<a href="https://fiesta.gamigo.com/us/crusader">🗡</a><a href="https://fiesta.gamigo.com/us/fighter">🛡</a><a href="https://fiesta.gamigo.com/us/joker">👻</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sprrest-end" class="outline-3">
+<h3 id="sprrest-end">25 SPR/Rest END</h3>
+<div class="outline-text-3" id="text-sprrest-end">
+<p>
+The above support build (Full END) is also great, but it ignores SP and
+crit rate. You can sprinkle in a few points into SPR until you have 25
+to fix this, I highly recommend this build for Holy Knights since they
+tend to burn through available SP, also anyone in a support role can use
+some extra crits when they need to solo 😉.
+</p>
+
+<p>
+<i>Classes</i>:
+<a href="https://fiesta.gamigo.com/us/fighter">🛡</a><a href="https://fiesta.gamigo.com/us/crusader">🗡</a><a href="https://fiesta.gamigo.com/us/cleric">✝️</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-spr33-dexrest-str" class="outline-3">
+<h3 id="spr33-dexrest-str">25 SPR/33 DEX/Rest STR</h3>
+<div class="outline-text-3" id="text-spr33-dexrest-str">
+<p>
+This build maximize your attack power and crit rate while making it you
+a hard target to hit. You can use gear to help with DEF and M.DEF.
+</p>
+
+<p>
+<i>Classes</i>:
+<a href="https://fiesta.gamigo.com/us/archer">🏹</a><a href="https://fiesta.gamigo.com/us/mage">🧙</a><a href="https://fiesta.gamigo.com/us/joker">👻</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-end33-dex25-sprrest-str" class="outline-3">
+<h3 id="end33-dex25-sprrest-str">50 END/33 DEX/25 SPR/Rest STR</h3>
+<div class="outline-text-3" id="text-end33-dex25-sprrest-str">
+<p>
+If you&rsquo;re looking for a wellrounded build that is nearly perfect for
+player-versus-player (PVP), this is the build for you. A reminder
+though, this is a jack-of-all-trades/master-of-none type situation, and
+many classesw have gear and armor to help with stats like END.
+</p>
+
+<p>
+<i>Classes</i>:
+<a href="https://fiesta.gamigo.com/us/fighter">🛡</a><a href="https://fiesta.gamigo.com/us/archer">🏹</a><a href="https://fiesta.gamigo.com/us/mage">🧙</a><a href="https://fiesta.gamigo.com/us/joker">👻</a>
+</p>
+
+  </div>
+</div>
+<!-- InstanceEndEditable --></section>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © Yayoi. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</div>
+</body>
+</div>
+</body>
+</html>
